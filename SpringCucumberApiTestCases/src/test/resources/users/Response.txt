@@ -1,0 +1,32 @@
+Payload:
+	{	
+		"username":"Divakar567",
+    	"password":"test123",
+    	"fname":"Divakar Babu",
+    	"zip":"12345",
+    	"phone":"907654321",
+    	"org_id":251,
+    	"lname":"Budumuru",
+    	"email":"divakar.budumuru@netenrich.com",
+    	"address":"Srikakulam",
+    	"country_id":1,
+    	"city":"Srikakulam",
+    	"created_by":151,
+    	"modified_by":17356,
+    	"image":""
+	}
+
+
+
+
+1. successful user creation
+
+Status: 201
+{
+    "response": "users.user_actions.post.user_creation_success"
+}
+
+2. Existing user creation
+
+Status: 400
+{"status": "failed", "response": "users.user_actions.post.email_already_exist"}

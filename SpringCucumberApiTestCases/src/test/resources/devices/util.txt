@@ -1,0 +1,40 @@
+Create Device payload:
+	
+{
+	"name": "HYDLPT111",
+	"ipaddress": "172.26.10.56",
+	"dns_name": "10.0.01",
+	"serial_number": "3",
+	"os": "windows",
+	"physicalmemory_GB": 120,
+	"sysvendor": "Dell",
+	"mac_address": "12.23.56.3",
+	"model": "123",
+	"bioversion": "2",
+	"biosname": "test",
+	"device_type": 1,
+	"manufacturer": "Dell",
+	"status":1,
+	"status_last_update":0
+}
+
+
+{"name":"HYDLPT111","ipaddress":"172.26.10.56","dns_name":"10.0.01","serial_number":"3","os":"windows","physicalmemory_GB":120,"sysvendor":"Dell","mac_address":"12.23.56.3","model":"123","bioversion":"2","biosname":"test","device_type":1,"manufacturer":"Dell","status":1,"status_last_update":0}
+
+[{"logmein_host_id":null,"site_name":null,"city_id":0,"service_name":null,"sysvendor":"HP","status_last_update":0,"system_inventory":null,"anti_virus_details":null,"modified_date":null,"hardware_inventory":null,"biosname":"Phoenix","deviceType":"Router","mac_address":"00:0D:3A:70:96:4E","device_type_id":8,"device_id":1,"physicalmemory_GB":32.0,"STATUS":2,"activated":1,"parent_type_id":39,"serial_number":"66S89LOMY2421","path":"Network Device >> Router","ipaddress":"10.10.0.4","manufacturer":"HP","name":"AZR-FTP01","dns_name":"AZR-FTP01.Tukuru.local","org_id":571,"bioversion":"8.2.33.8","created_date":null,"model":"HP Priloant","os":"Windows 2012-R2-Datacenter","unique_id":20161025142616}]
+
+{"device_id":11,"name":"APP27HGTR","ipaddress":"10.2.31.8","dns_name":"APP27HGTR.Tukuru.local","serial_number":"889QB3TMY454","os":"Windows Datacenter Server","physicalmemory_GB":"32.00","sysvendor":"DELL","mac_address":"00:50:56:85:00:02","model":"DELL","bioversion":"8.9.33.4","biosname":"Phoenix","device_type_id":8,"activated":1,"manufacturer":"DELL","org_id":571,"unique_id":2016102514370,"created_date":null,"modified_date":null,"status":2,"status_last_update":0,"site_name":null,"city_id":0,"service_name":null,"logmein_host_id":null,"hardware_inventory":null,"system_inventory":null,"anti_virus_details":null}
+
+{"device_type_id":"11","name":"Testlabmember1","dns_name":"10.5.0.1","ipaddress":"10.5.0.6","mac_address":"00:0D:3A:12:93:3B","os":"Windows 2012-R2-Datacenter","physicalmemory_GB":"0","model":"","manufacturer":"","sysvendor":"AZURE","serial_number":"","biosname":"","bioversion":""}
+{"response":"devices.services.update_device_success"}
+
+how to upload files to github
+	git init
+	git add .    or    filename
+	git commit -m "First Commit"
+	git remote add origin remote_url
+	git remote -v
+	git push origin master
+how to commit
+how create a branch
+how to merge two branches code
