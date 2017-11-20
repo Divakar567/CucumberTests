@@ -49,5 +49,23 @@ public class StepDefsIntegrationTest extends SpringIntegrationTest {
     public void postPayloadToUri(String payload, String uri) throws IOException {
     	executeUserPost(uri, payload);
     }
+    
+    @When("^patch request with payload as (.+) sent to this URI (.+)$")
+    public void patchPayloadToUri(String payload, String uri) throws IOException {
+    	executeUserPatch(uri, payload);
+    }
+    
+    @When("^delete request sent$")
+    public void delete_request_sent() throws Throwable {
+    	String request="http://localhost:8000/20161025141111/devices/";
+    	executeUserListGet(request);
+    	String deviceID=KeysExtractor.findTestDevice(latestResponse.getBody());
+    	if(deviceID==null) {
+    		deviceID="1000000000000009";
+    	}
+    	latestResponse=null;
+    	request=request+deviceID.trim()+"/";
+    	executeUserDelete(request);
+    }
 
 }

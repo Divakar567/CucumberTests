@@ -1,4 +1,4 @@
-package com.divaportal.devices;
+package com.divaportal.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -51,21 +51,6 @@ public class KeysExtractor {
 	    Collections.sort(originalResponse);      
 	    return sampleResponse.equals(originalResponse);
 	}
-
-	public static String findTestDevice(String responseBody) {
-		JSONArray jsonArray = new JSONArray(responseBody);
-		for(int i=0;i<jsonArray.length();i++) {
-			JSONObject jsonObj = jsonArray.getJSONObject(i);
-			String name=jsonObj.getString("name");
-			if(name.equals("TestDevice")) {
-				Long device_unique_id=new Long(jsonObj.getLong("unique_id"));
-				String deviceID=device_unique_id.toString();
-				return deviceID;
-			}
-		}
-		return null;
-	}
-
 	
 //	public static void main(String args[]) {
 //		ArrayList<String> a=returnKeysFromResponseBody("[\r\n" + 

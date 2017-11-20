@@ -1,4 +1,4 @@
-package com.divaportal.devices;
+package com.divaportal.test;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.IntegrationTest;
@@ -113,8 +113,6 @@ public class SpringIntegrationTest {
 		
 
 		HttpComponentsClientHttpRequestFactory requestFactory = new HttpComponentsClientHttpRequestFactory();
-		requestFactory.setConnectTimeout(5000);
-		requestFactory.setReadTimeout(12000);
 
 		restTemplate.setRequestFactory(requestFactory);
 		restTemplate.setErrorHandler(errorHandler);
