@@ -2,7 +2,6 @@ package com.divaportal.devices;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
@@ -13,9 +12,13 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class StepDefsIntegrationTest extends SpringIntegrationTest {
+public class StepDefinitionsFile extends StepDefinitionFileSuperFile {
     
-    
+    /**
+     * 
+     * @param url
+     * @throws Throwable
+     */
     @When("^get request sent to this URI (.+)$")
     public void callUsersList(String url) throws Throwable {
     	String request=(url);

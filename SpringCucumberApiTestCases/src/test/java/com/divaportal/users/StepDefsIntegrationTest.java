@@ -4,9 +4,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 
-import java.io.IOException;
 
-import cucumber.api.java.en.Given;
 import org.springframework.http.HttpStatus;
 
 import cucumber.api.java.en.And;

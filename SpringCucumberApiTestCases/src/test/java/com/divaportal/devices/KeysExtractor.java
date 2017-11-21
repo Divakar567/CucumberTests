@@ -5,11 +5,12 @@ import java.util.Collections;
 import java.util.Iterator;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class KeysExtractor {
 
-	public static ArrayList<String> returnKeysFromResponseBody(String responseBody){
+	public static ArrayList<String> returnKeysFromResponseBody(String responseBody) throws JSONException{
 		
 		JSONArray jsonArray = new JSONArray(responseBody);
 		JSONObject jsonObj = jsonArray.getJSONObject(0);
@@ -24,7 +25,7 @@ public class KeysExtractor {
 		
 	}
 	
-	public static ArrayList<String> returnKeysFromResponseBody(String responseBody,int no){
+	public static ArrayList<String> returnKeysFromResponseBody(String responseBody,int no) throws JSONException{
 		
 		JSONObject jsonObj = new JSONObject(responseBody);
 		@SuppressWarnings("rawtypes")
@@ -52,7 +53,7 @@ public class KeysExtractor {
 	    return sampleResponse.equals(originalResponse);
 	}
 
-	public static String findTestDevice(String responseBody) {
+	public static String findTestDevice(String responseBody) throws JSONException {
 		JSONArray jsonArray = new JSONArray(responseBody);
 		for(int i=0;i<jsonArray.length();i++) {
 			JSONObject jsonObj = jsonArray.getJSONObject(i);
